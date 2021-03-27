@@ -8,20 +8,20 @@ os.environ["OPENAI_API_KEY"] = "sk-x7wPkzm7kRacZPOWZhbOT727pPAY65xRFiDSYCUQ"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 with open('data.txt', 'r') as file:
-  data = file.read().replace('\n', '')
+    data = file.read().replace('\n', '')
 
 # Parse sentiments from file
 sentiments = []
 file1 = open("output.txt")
 for line in file1.readlines():
     currentLine = (line.strip().split("Sentiment: "))
-    #print(sentiment)
+    # print(sentiment)
     sentimentVal = 0
     for i in currentLine:
         try:
-            #print(i)
+            # print(i)
             sentimentVal = float(i)
-            if(sentimentVal > 0):
+            if sentimentVal > 0:
                 sentiments.append(sentimentVal)
         except ValueError:
             # print(ValueError)
