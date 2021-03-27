@@ -3,32 +3,12 @@
 import os
 import openai
 
-os.environ["OPENAI_API_KEY"] = "sk-x7wPkzm7kRacZPOWZhbOT727pPAY65xRFiDSYCUQ"
+os.environ["OPENAI_API_KEY"] = "keey"
 
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 with open('data.txt', 'r') as file:
   data = file.read().replace('\n', '')
-
-# Parse sentiments from file
-sentiments = []
-file1 = open("output.txt")
-for line in file1.readlines():
-    currentLine = (line.strip().split("Sentiment: "))
-    #print(sentiment)
-    sentimentVal = 0
-    for i in currentLine:
-        try:
-            #print(i)
-            sentimentVal = float(i)
-            if(sentimentVal > 0):
-                sentiments.append(sentimentVal)
-        except ValueError:
-            # print(ValueError)
-            pass
-    print(sentiments)
-
-file1.close()
 
 # response = openai.Completion.create(
 #   engine="davinci",
@@ -42,3 +22,30 @@ file1.close()
 # )
 #
 # print(response.choices[0].text.strip())
+
+# Parse sentiments from file
+sentiments = []
+file1 = open("output.txt")
+for line in file1.readlines():
+    currentLine = (line.strip().split("Sentiment: "))
+    sentimentVal = 0
+    for i in currentLine:
+        try:
+            sentimentVal = float(i)
+            if(sentimentVal > 0):
+                sentiments.append(sentimentVal)
+        except ValueError:
+            pass
+file1.close()
+print(len(sentiments))
+
+# Parse reviews from file
+reviews = []
+file1 = open("output.txt")
+chunks = (file1.read().split("###"))
+for index, item in enumerate(chunks):
+    if (index % 2) != 0: # if index is odd (1, 3, 5, etc.)
+        reviews.append(chunks[index])
+file1.close()
+print(len(reviews))
+
