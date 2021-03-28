@@ -1,13 +1,14 @@
+Analyze the reviews and identify areas for improvement.
 Reviews:
-Excellent hospital. Great nursing staff. Very clean rooms and they made our stay comfortable. They took great care of my husband! Food needs improvement but that will come in time!!
-I brought my girlfriend to the er. she had fell down and I needed to bring her in. I dropped her off and went to park the truck. when I got to the ER the cop working the door wouldn't check me in so I couldn't be in there with her!!! this is outrageous and is in now way acceptable. we will not be returning to your hospital and I will have our baby elsewhere!
-Super friendly staff and I saw the Doctor right away.
-I'm in the hospital & I've been told that my nurse will help me to the bathroom about 10 times but they won't let me go. And soooorude
-I am having some serious issues with their billing department. Many calls over the last few months to figure out payments, and this month they took an unauthorized payment from my account! Last month they sent my account to collections when I was making payments! I can’t get a straight answer when I call to get everything figured out.
-The best staff when it comes to doctors and nurses ! So glad we chose this hospital.
-Very long and painful process. Nurses were negligent and not responsive.  Huge medical bill  despite having good insurance. Could have been a lot better.
-Outputs:
-Improve food.
-Improve check-in process
-No recommended improvements
-Improve nursing care
+1. Excellent hospital. Great nursing staff. Very clean rooms and they made our stay comfortable. They took great care of my husband! Food needs improvement but that will come in time!!
+2. I brought my girlfriend to the er. she had fell down and I needed to bring her in. I dropped her off and went to park the truck. when I got to the ER the cop working the door wouldn't check me in so I couldn't be in there with her!!! this is outrageous and is in no way acceptable. we will not be returning to your hospital and I will have our baby elsewhere!
+3. Super friendly staff and I saw the Doctor right away.
+4. I'm in the hospital & I've been told that my nurse will help me to the bathroom about 10 times but they won't let me go. And so rude!
+5. I am having some serious issues with their billing department. Many calls over the last few months to figure out payments, and this month they took an unauthorized payment from my account! Last month they sent my account to collections when I was making payments! I can’t get a straight answer when I call to get everything figured out.
+6. The best staff when it comes to doctors and nurses ! So glad we chose this hospital.
+7. Very long and painful process. Nurses were negligent and not responsive.  Huge medical bill  despite having good insurance. Could have been a lot better.
+Areas for improvement:
+1. Improve food.
+2. Improve check-in process
+3. No recommended improvements
+4. Improve nursing care
